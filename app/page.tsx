@@ -1,3 +1,4 @@
+import FacebookMsg from '@/components/FacebookMsg'
 import HeroCarousel from '@/components/HeroCarousel'
 import Packages from '@/components/Packages'
 import Tools from '@/components/Tools'
@@ -193,6 +194,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
+        <FacebookMsg/>
     </div>
   )
 }
