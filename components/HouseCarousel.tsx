@@ -5,12 +5,12 @@ import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
 
 const heroImages = [
-  { imgUrl: '/images/hero1.jpg', alt: 'gh1' },
-  { imgUrl: '/images/hero2.jpg', alt: 'gh2' },
-  { imgUrl: '/images/hero3.jpg', alt: 'gh3' },
+  { imgUrl: '/images/house1.jpg', alt: 'gh1' },
+  { imgUrl: '/images/house2.jpg', alt: 'gh2' },
+  { imgUrl: '/images/house3.jpg', alt: 'gh3' },
 ];
 
-const HeroCarousel = () => {
+const HouseCarousel = () => {
   return (
     <div className='hero-carousel'>
       <Carousel
@@ -26,22 +26,14 @@ const HeroCarousel = () => {
             src={image.imgUrl}
             alt={image.alt}
             width={460}
-            height={480}
+            height={450}
             className='object-contain'
             key={image.alt}
           />
         ))}
       </Carousel>
-
-      <Image
-        src='icons/hand-drawn-arrow.svg'
-        alt='arrow'
-        width={175}
-        height={175}
-        className='max-xl:hidden absolute -left-[15%] bottom-0 z-0'
-      />
     </div>
   );
 };
 
-export default HeroCarousel;
+export default HouseCarousel;
